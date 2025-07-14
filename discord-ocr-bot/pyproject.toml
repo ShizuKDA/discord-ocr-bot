@@ -1,12 +1,15 @@
-[project]
-name = "python-template"
+[tool.poetry]
+name = "discord-ocr-bot"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
-requires-python = ">=3.11"
-dependencies = [
-    "discord-py>=2.5.2",
-    "flask>=3.1.1",
-    "pytesseract>=0.3.13",
-    "requests>=2.32.4",
-]
+authors = ["Tu Nombre <tuemail@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+discord.py = "^2.0.0"
+pytesseract = "*"
+pillow = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
